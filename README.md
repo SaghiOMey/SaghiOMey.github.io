@@ -13,6 +13,14 @@
 [<img src="linkedin-1-svgrepo-com.svg" width="22" />](https://www.linkedin.com/company/saghiomey/)
 [<img src="spotify-svgrepo-com.svg" width="22" />](https://open.spotify.com/show/6ObUzf2m0OtJNyVvNvwIVp)
 
+# NFT
+
+[I A V](https://saghiomey.netlify.app/NFT)
+
+# Reviews
+
+[⭐ ⭐ ⭐ ⭐ ⭐](https://saghiomey.netlify.app/Reviews)
+
 
 
 
