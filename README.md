@@ -6,7 +6,9 @@
 
 # Social Media
 
-[<img src="google-news-svgrepo-com.svg" width="22" />](https://news.google.com/s/CBIw6YXAwrEB?sceid=US:en&sceid=US:en&r=0&oc=1)
+[<img src="google-news-svgrepo-com.svg" width="22" />](https://news.google.com/s/CBIw6YXAwrEB?sceid=US:en&sceid=US:en&r=0&oc=1) 
+[<img src="facebook-svgrepo-com.svg" width="22" />](https://www.facebook.com/profile.php?id=100089930657614)
+[<img src="youtube-color-svgrepo-com.svg" width="22" />](https://www.youtube.com/channel/UCCsIc3DO4eWMO2TlyRxxQSQ)
 
 
 
