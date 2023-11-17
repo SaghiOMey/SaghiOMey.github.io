@@ -4,7 +4,7 @@
 
 💫*where ”Everyone Has A Story” from the world*💫
 
-# Social Media
+# Social  Media
 
 [<img src="/assets/google-news-svgrepo-com.svg" width="22" />](https://news.google.com/s/CBIw6YXAwrEB?sceid=US:en&sceid=US:en&r=0&oc=1) 
 [<img src="/assets/facebook-svgrepo-com.svg" width="22" />](https://www.facebook.com/profile.php?id=100089930657614)
