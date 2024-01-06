@@ -4,7 +4,7 @@
 
 💫*where ”Everyone Has A Story” from the world*💫
 
-# SaghiOMey sites
+# SaghiOMey Sites
 
 [<img src="/assets/SM.svg" width="85" />](https://saghiomey.netlify.app/)
 [<img src="/assets/SOM.svg" width="85" />](https://workflow-saghiomey.netlify.app/)
