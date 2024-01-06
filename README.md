@@ -1,4 +1,4 @@
-# [<img src="/assets/SM.svg" width="95" />](https://saghiomey.netlify.app/) SaghiOMey(SM)
+# [<img src="/assets/SaghiOMey.svg" width="95" />](https://saghiomey.github.io/) SaghiOMey(SM)
 
 💎*SM is a program with host **milad***💎
 
