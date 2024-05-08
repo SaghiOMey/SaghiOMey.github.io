@@ -18,10 +18,6 @@
 [<img src="/assets/linkedin.svg" width="22" />](https://www.linkedin.com/company/saghiomey/)
 [<img src="/assets/spotify.svg" width="22" />](https://open.spotify.com/show/6ObUzf2m0OtJNyVvNvwIVp)
 
-# NFT
-
-[I A V](https://saghiomey.netlify.app/NFT)
-
 # Reviews
 
 [⭐ ⭐ ⭐ ⭐ ⭐](https://saghiomey.netlify.app/Reviews)
