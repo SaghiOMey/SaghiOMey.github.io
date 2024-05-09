@@ -10,6 +10,13 @@
 [<img src="/assets/SOM.svg" width="85" />](https://workflow-saghiomey.netlify.app/)
 [<img src="/assets/SH.svg" width="85" />](https://shopping-saghiomey.netlify.app/)
 
+# Products
+
+[<img src="/assets/image.svg" width="26" />](https://shopping-saghiomey.netlify.app/image)
+[<img src="/assets/audio.svg" width="26" />](https://shopping-saghiomey.netlify.app/audio)
+[<img src="/assets/video.svg" width="26" />](https://shopping-saghiomey.netlify.app/video)
+[<img src="/assets/book.svg" width="26" />](https://shopping-saghiomey.netlify.app/book)
+
 # Platforms
 
 [<img src="/assets/google-news.svg" width="22" />](https://news.google.com/s/CBIw6YXAwrEB?sceid=US:en&sceid=US:en&r=0&oc=1) 
