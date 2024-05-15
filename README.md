@@ -24,7 +24,7 @@
 [<img src="/assets/youtube.svg" width="22" />](https://www.youtube.com/channel/UCCsIc3DO4eWMO2TlyRxxQSQ)
 [<img src="/assets/linkedin.svg" width="22" />](https://www.linkedin.com/company/saghiomey/)
 [<img src="/assets/spotify.svg" width="22" />](https://open.spotify.com/show/6ObUzf2m0OtJNyVvNvwIVp)
-[<img src="/assets/feed.svg" width="22" />](https://saghiomey.netlify.app/News.xml)
+[<img src="/assets/github.svg" width="22" />](https://github.com/SaghiOMey)
 
 # Reviews
 
