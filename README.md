@@ -29,7 +29,6 @@
 # Feeds
 
 [<img src="/assets/episodes.svg" width="22" />](https://saghiomey.netlify.app/feed.xml)
-[<img src="/assets/news.svg" width="22" />](https://saghiomey.netlify.app/News.xml)
 
 # Reviews
 
