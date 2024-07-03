@@ -26,10 +26,6 @@
 [<img src="/assets/spotify.svg" width="22" />](https://open.spotify.com/show/6ObUzf2m0OtJNyVvNvwIVp)
 [<img src="/assets/github.svg" width="22" />](https://github.com/SaghiOMey)
 
-# Feeds
-
-[<img src="/assets/episodes.svg" width="22" />](https://saghiomey.netlify.app/feed.xml)
-
 # Reviews
 
 [⭐ ⭐ ⭐ ⭐ ⭐](https://saghiomey.netlify.app/Reviews)
