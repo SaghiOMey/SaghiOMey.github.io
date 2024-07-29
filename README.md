@@ -1,8 +1,7 @@
 # [<img src="/assets/SaghiOMey.svg" width="95" />](https://saghiomey.github.io) SaghiOMey(SM)
 
-💎*SM is a program with host **milad***💎
+💎*SaghiOMey is a media a subject chose by people and can produce relationship between government and nation ...*💎
 
-💫*where ”Everyone Has A Story” from the world*💫
 
 # SaghiOMey Sites
 
