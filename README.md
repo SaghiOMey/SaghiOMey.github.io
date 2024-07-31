@@ -2,6 +2,8 @@
 
 💎*SaghiOMey is a media a subject chose by people and can produce relationship between government and nation ...*💎
 
+✨*Decentralized from the SaghiOMey is logically, the the question is how our costs are covered! simply by people, they choose whether or not, we exist*✨
+
 
 # SaghiOMey Sites
 
