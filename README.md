@@ -25,10 +25,6 @@
 [<img src="/assets/linkedin.svg" width="22" />](https://www.linkedin.com/company/saghiomey/)
 [<img src="/assets/github.svg" width="22" />](https://github.com/SaghiOMey)
 
-# Reviews
-
-[⭐ ⭐ ⭐ ⭐ ⭐](https://saghiomey.netlify.app/Reviews)
-
 
 
 
