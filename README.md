@@ -7,7 +7,7 @@
 
 # SaghiOMey Sites
 
-[<img src="/assets/SM.svg" width="85" />](https://saghiomey.netlify.app/)
+[<img src="/assets/SM.svg" width="85" />](https://saghiomey.vercel.app)
 [<img src="/assets/SOM.svg" width="85" />](https://workflow-saghi-o-mey.vercel.app)
 [<img src="/assets/SH.svg" width="85" />](https://shopping-saghiomey.netlify.app/)
 
