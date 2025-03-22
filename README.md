@@ -11,6 +11,11 @@
 [<img src="/assets/SOM.svg" width="85" />](https://workflow-saghi-o-mey.vercel.app)
 [<img src="/assets/SH.svg" width="85" />](https://shopping-saghiomey.vercel.app)
 
+# Press
+
+[<img src="/assets/brush.svg" width="26" />](https://workflow-saghi-o-mey.vercel.app/magazines)
+[<img src="/assets/puzzle.svg" width="26" />](https://workflow-saghi-o-mey.vercel.app/blogs)
+
 # Gallery
 
 [I  A  I](https://saghiomey.vercel.app/Gallery)
