@@ -14,6 +14,7 @@
 # Press
 
 [<img src="/assets/brush.svg" width="26" />](https://workflow-saghi-o-mey.vercel.app/magazines)
+[<img src="/assets/rss.svg" width="26" />](https://saghiomey.vercel.app/feed.xml)
 [<img src="/assets/puzzle.svg" width="26" />](https://workflow-saghi-o-mey.vercel.app/blogs)
 
 # Gallery
