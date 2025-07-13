@@ -17,7 +17,7 @@
     <link rel="icon" type="image/x-icon" href="./assets/SaghiOMey.ico">
     <title>SaghiOMey</title>
 </head>
-<header class="bg-black">
+<header class="bg-inherit sticky top-0">
   <div class="flex">
     <a href="#" class="-m-1.5 p-1.5">
         <span class="sr-only">SaghiOMey</span>
@@ -33,11 +33,11 @@
       </button>
     </div>
     <div class="hidden md:flex md:gap-x-12">
-      <a href="#Sites" class="text-sm/6 font-semibold text-gray-100">Sites</a>
-      <a href="#Press" class="text-sm/6 font-semibold text-gray-100">Press</a>
-      <a href="#Gallery" class="text-sm/6 font-semibold text-gray-100">Gallery</a>
-      <a href="#Products" class="text-sm/6 font-semibold text-gray-100">Products</a>
-      <a href="#Platforms" class="text-sm/6 font-semibold text-gray-100">Platforms</a>
+      <a href="#Sites" class="text-sm/6 font-semibold text-gray-100 hover:text-yellow-500" id="sts">Sites</a>
+      <a href="#Press" class="text-sm/6 font-semibold text-gray-100 hover:text-yellow-500" id="pes">Press</a>
+      <a href="#Gallery" class="text-sm/6 font-semibold text-gray-100 hover:text-yellow-500" id="glr">Gallery</a>
+      <a href="#Products" class="text-sm/6 font-semibold text-gray-100 hover:text-yellow-500" id="prd">Products</a>
+      <a href="#Platforms" class="text-sm/6 font-semibold text-gray-100 hover:text-yellow-500" id="plt">Platforms</a>
     </div>
   </nav>
   </div>
@@ -210,5 +210,72 @@
             </div>
         </div>
     </main>
+      <script>
+    const sts = document.getElementById('sts');
+    const pes = document.getElementById('pes');
+    const glr = document.getElementById('glr');
+    const prd= document.getElementById('prd');
+    const plt= document.getElementById('plt');
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 350 && window.scrollY < 850) {
+        // Scroll passed 100px, change text color to red using Tailwind class
+        sts.classList.remove('text-gray-100');
+        sts.classList.add('text-yellow-500');
+      } else {
+        // Scroll above 100px, revert text color back to black
+        sts.classList.remove('text-yellow-500');
+        sts.classList.add('text-gray-100');
+      }
+    });
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 870 && window.scrollY < 1230) {
+        // Scroll passed 100px, change text color to red using Tailwind class
+        pes.classList.remove('text-gray-100');
+        pes.classList.add('text-yellow-500');
+      } else {
+        // Scroll above 100px, revert text color back to black
+        pes.classList.remove('text-yellow-500');
+        pes.classList.add('text-gray-100');
+      }
+    });
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 1240 && window.scrollY < 1700) {
+        // Scroll passed 100px, change text color to red using Tailwind class
+        glr.classList.remove('text-gray-100');
+        glr.classList.add('text-yellow-500');
+      } else {
+        // Scroll above 100px, revert text color back to black
+        glr.classList.remove('text-yellow-500');
+        glr.classList.add('text-gray-100');
+      }
+    });
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 1710 && window.scrollY < 2120) {
+        // Scroll passed 100px, change text color to red using Tailwind class
+        prd.classList.remove('text-gray-100');
+        prd.classList.add('text-yellow-500');
+      } else {
+        // Scroll above 100px, revert text color back to black
+        prd.classList.remove('text-yellow-500');
+        prd.classList.add('text-gray-100');
+      }
+    });
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 2140) {
+        // Scroll passed 100px, change text color to red using Tailwind class
+        plt.classList.remove('text-gray-100');
+        plt.classList.add('text-yellow-500');
+      } else {
+        // Scroll above 100px, revert text color back to black
+        plt.classList.remove('text-yellow-500');
+        plt.classList.add('text-gray-100');
+      }
+    });
+  </script>
 </body>
 </html>
