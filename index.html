@@ -87,7 +87,7 @@
             </div>
         </div>
 
-        <div class="pt-44 mt-12 w-[310px] text-center md:w-full md:text-left" id="Sites">
+        <div class="pt-44 mt-12 w-[310px] opacity-0 transition-opacity duration-700 text-center md:w-full md:text-left" id="Sites">
             <div class="border-b-2 border-b-white">
                 <h1 class="text-2xl font-bold md:text-4xl md:ml-7 text-white pb-5" id="Sites">Sites</h1>
             </div>
@@ -110,7 +110,7 @@
                 </div>
         </div>
 
-        <div class="pt-56 mt-12 w-[310px] text-center md:w-full md:text-left" id="Press">
+        <div class="pt-56 mt-12 w-[310px] opacity-0 transition-opacity duration-700 text-center md:w-full md:text-left" id="Press">
             <div class="border-b-2 border-b-white">
                 <h1 class="text-2xl font-bold md:text-4xl md:ml-7 text-white pb-5" id="Press">Press</h1>
             </div>
@@ -148,7 +148,7 @@
             </div>
             </div>
 
-        <div class="pt-56 mt-12 w-[310px] text-center md:w-full md:text-left" id="Gallery">
+        <div class="pt-56 mt-12 w-[310px] opacity-0 transition-opacity duration-700 text-center md:w-full md:text-left" id="Gallery">
             <div class="border-b-2 border-b-white">
                 <h1 class="text-2xl font-bold md:text-4xl md:ml-7 text-white pb-5">Gallery</h1>
             </div>
@@ -159,7 +159,7 @@
             </div>
             </div>
 
-        <div class="pt-56 mt-12 w-[310px] text-center md:w-full md:text-left" id="Products">
+        <div class="pt-56 mt-12 w-[310px] opacity-0 transition-opacity duration-700 text-center md:w-full md:text-left" id="Products">
             <div class="border-b-2 border-b-white">
                 <h1 class="text-2xl font-bold md:text-4xl md:ml-7 text-white pb-5" id="Products">Products</h1>
             </div>
@@ -199,7 +199,7 @@
                 </div>
             </div>    
 
-        <div class="pt-64 pb-40 mt-12 w-[310px] text-center md:w-full" id="Platforms">
+        <div class="pt-64 pb-40 mt-12 w-[310px] opacity-0 transition-opacity duration-700 text-center md:w-full" id="Platforms">
             <div class="border-b-2 border-b-white text-center md:text-left text-white">
                 <h1 class=" text-2xl font-bold md:text-4xl md:ml-7 pb-5" id="Platforms">Platforms</h1>
             </div>
@@ -210,7 +210,7 @@
             </div>
         </div>
     </main>
-      <footer class="w-full py-14">
+      <footer class="w-full py-14 opacity-0 transition-opacity duration-700" id="scrollFooter">
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div class="max-w-3xl mx-auto">
                 <a href="https://github.com/SaghiOMey" class="flex justify-center items-center">
@@ -278,7 +278,15 @@
     const mglr = document.getElementById('mglr');
     const mprd= document.getElementById('mprd');
     const mplt= document.getElementById('mplt');
+
     const element = document.getElementById('C/OElement');
+
+    const Sites = document.getElementById('Sites');
+    const Press = document.getElementById('Press');
+    const Gallery = document.getElementById('Gallery');
+    const Products = document.getElementById('Products');
+    const Platforms = document.getElementById('Platforms');
+    const scrollFooter = document.getElementById('scrollFooter');
 
     // Add scroll event listeners to change text color based on scroll position
     window.addEventListener('scroll', () => {
@@ -323,7 +331,7 @@
     });
 
     window.addEventListener('scroll', () => {
-      if (window.scrollY > 2140) {
+      if (window.scrollY > 2140 && window.scrollY < 2640) {
         // Scroll passed 100px, change text color to red using Tailwind class
         plt.classList.remove('text-gray-100');
         plt.classList.add('text-yellow-500');
@@ -391,6 +399,79 @@
       }
     });
 
+    // Add scroll event listeners to change opacity of sections based on scroll position
+    window.addEventListener('scroll', () => {
+      if(window.scrollY > 2670) {
+        scrollFooter.classList.remove('opacity-0');
+        scrollFooter.classList.add('opacity-100');
+        scrollFooter.classList.add('ease-in');
+      } else {
+        scrollFooter.classList.remove('opacity-100');
+        scrollFooter.classList.add('opacity-0');
+        scrollFooter.classList.remove('ease-in');
+      }
+    });
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 350 && window.scrollY < 850) {
+        Sites.classList.remove('opacity-0');
+        Sites.classList.add('opacity-100');
+        Sites.classList.add('ease-in');
+      } else {
+        Sites.classList.remove('opacity-100');
+        Sites.classList.remove('ease-in');
+        Sites.classList.add('opacity-0');
+      }
+    });
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 870 && window.scrollY < 1230) {
+        Press.classList.remove('opacity-0');
+        Press.classList.remove('opacity-100');
+        Press.classList.add('ease-in');
+      } else {
+        Press.classList.remove('opacity-100');
+        Press.classList.add('opacity-0');
+        Press.classList.remove('ease-in');
+      }
+    });
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 1240 && window.scrollY < 1700) {
+        Gallery.classList.remove('opacity-0');
+        Gallery.classList.add('opacity-100');
+        Gallery.classList.add('ease-in');
+      } else {
+        Gallery.classList.remove('opacity-100');
+        Gallery.classList.add('opacity-0');
+        Gallery.classList.remove('ease-in');
+      }
+    });
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 1710 && window.scrollY < 2120) {
+        Products.classList.remove('opacity-0');
+        Products.classList.add('opacity-100');
+        Products.classList.add('ease-in');
+      } else {
+        Products.classList.remove('opacity-100');
+        Products.classList.add('opacity-0');
+        Products.classList.remove('ease-in');
+      }
+    });
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 2140 && window.scrollY < 2640) {
+        Platforms.classList.remove('opacity-0');
+        Platforms.classList.add('opacity-100');
+        Platforms.classList.add('ease-in');
+      } else {
+        Platforms.classList.remove('opacity-100');
+        Platforms.classList.add('opacity-0');
+        Platforms.classList.remove('ease-in');
+      }
+    });
+    
     function toggleVisibility() {
       const element = document.getElementById('C/OElement');
       element.classList.toggle('hidden');
