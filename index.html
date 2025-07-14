@@ -24,8 +24,8 @@
         <img src="./assets/SaghiOMey.svg" class="w-[110px]"/>
     </a>
   <nav class="mx-auto flex max-w-2xl items-center justify-center p-6 md:px-8" aria-label="Global">
-    <div class="flex lg:hidden">
-      <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+    <div class="flex -mr-44 md:hidden">
+      <button type="button" onclick="toggleVisibility()" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-200">
         <span class="sr-only">Open main menu</span>
         <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
           <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
@@ -42,7 +42,7 @@
   </nav>
   </div>
   <!-- Mobile menu, show/hide based on menu open state. -->
-  <div class="md:hidden" role="dialog" aria-modal="true">
+  <div id="C/OElement" class="hidden" role="dialog" aria-modal="true">
     <!-- Background backdrop, show/hide based on slide-over state. -->
     <div class="fixed inset-0 z-50"></div>
     <div class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-black p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
@@ -51,7 +51,7 @@
           <span class="sr-only">SaghiOMey</span>
           <img class="w-[88px]" src="./assets/SaghiOMey.svg" alt="" />
         </a>
-        <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
+        <button type="button" onclick="Close()"  class="-m-2.5 rounded-md p-2.5 text-gray-200">
           <span class="sr-only">Close menu</span>
           <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
             <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
@@ -61,11 +61,11 @@
       <div class="mt-6 flow-root">
         <div class="-my-6 divide-y divide-gray-500/10">
           <div class="space-y-2 py-6">
-            <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-100 hover:bg-gray-300">Sites</a>
-            <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-100 hover:bg-gray-300">Press</a>
-            <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-100 hover:bg-gray-300">Gallery</a>
-            <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-100 hover:bg-gray-300">Products</a>
-            <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-100 hover:bg-gray-300">Platforms</a>            
+            <a href="#Sites" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-100 hover:text-yellow-500" id="msts">Sites</a>
+            <a href="#Press" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-100 hover:text-yellow-500" id="mpes">Press</a>
+            <a href="#Gallery" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-100 hover:text-yellow-500" id="mglr">Gallery</a>
+            <a href="#Products" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-100 hover:text-yellow-500" id="mprd">Products</a>
+            <a href="#Platforms" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-100 hover:text-yellow-500" id="mplt">Platforms</a>            
           </div>
         </div>
       </div>
@@ -217,25 +217,30 @@
     const prd= document.getElementById('prd');
     const plt= document.getElementById('plt');
 
+    const msts = document.getElementById('msts');
+    const mpes = document.getElementById('mpes');
+    const mglr = document.getElementById('mglr');
+    const mprd= document.getElementById('mprd');
+    const mplt= document.getElementById('mplt');
+    const element = document.getElementById('C/OElement');
+
+    // Add scroll event listeners to change text color based on scroll position
     window.addEventListener('scroll', () => {
       if (window.scrollY > 350 && window.scrollY < 850) {
-        // Scroll passed 100px, change text color to red using Tailwind class
         sts.classList.remove('text-gray-100');
         sts.classList.add('text-yellow-500');
       } else {
-        // Scroll above 100px, revert text color back to black
         sts.classList.remove('text-yellow-500');
         sts.classList.add('text-gray-100');
       }
     });
-
+    
     window.addEventListener('scroll', () => {
       if (window.scrollY > 870 && window.scrollY < 1230) {
-        // Scroll passed 100px, change text color to red using Tailwind class
         pes.classList.remove('text-gray-100');
         pes.classList.add('text-yellow-500');
+        element.classList.add('hidden');
       } else {
-        // Scroll above 100px, revert text color back to black
         pes.classList.remove('text-yellow-500');
         pes.classList.add('text-gray-100');
       }
@@ -243,11 +248,9 @@
 
     window.addEventListener('scroll', () => {
       if (window.scrollY > 1240 && window.scrollY < 1700) {
-        // Scroll passed 100px, change text color to red using Tailwind class
         glr.classList.remove('text-gray-100');
         glr.classList.add('text-yellow-500');
       } else {
-        // Scroll above 100px, revert text color back to black
         glr.classList.remove('text-yellow-500');
         glr.classList.add('text-gray-100');
       }
@@ -255,11 +258,9 @@
 
     window.addEventListener('scroll', () => {
       if (window.scrollY > 1710 && window.scrollY < 2120) {
-        // Scroll passed 100px, change text color to red using Tailwind class
         prd.classList.remove('text-gray-100');
         prd.classList.add('text-yellow-500');
       } else {
-        // Scroll above 100px, revert text color back to black
         prd.classList.remove('text-yellow-500');
         prd.classList.add('text-gray-100');
       }
@@ -270,12 +271,79 @@
         // Scroll passed 100px, change text color to red using Tailwind class
         plt.classList.remove('text-gray-100');
         plt.classList.add('text-yellow-500');
+        element.classList.add('hidden');
       } else {
         // Scroll above 100px, revert text color back to black
         plt.classList.remove('text-yellow-500');
         plt.classList.add('text-gray-100');
       }
     });
+    
+    // Add click event listeners to change text color on mobile menu
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 400 && window.scrollY < 870) {
+        msts.classList.remove('text-gray-100');
+        msts.classList.add('text-yellow-500');
+        element.classList.add('hidden');
+      } else {
+        msts.classList.remove('text-yellow-500');
+        msts.classList.add('text-gray-100');
+      }
+    });
+    
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 880 && window.scrollY < 1350) {
+        mpes.classList.remove('text-gray-100');
+        mpes.classList.add('text-yellow-500');
+        element.classList.add('hidden');
+      } else {
+        mpes.classList.remove('text-yellow-500');
+        mpes.classList.add('text-gray-100');
+      }
+    });
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 1355 && window.scrollY < 1750) {
+        mglr.classList.remove('text-gray-100');
+        mglr.classList.add('text-yellow-500');
+        element.classList.add('hidden');
+      } else {
+        mglr.classList.remove('text-yellow-500');
+        mglr.classList.add('text-gray-100');
+      }
+    });
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 1755 && window.scrollY < 2150) {
+        mprd.classList.remove('text-gray-100');
+        mprd.classList.add('text-yellow-500');
+        element.classList.add('hidden');
+      } else {
+        mprd.classList.remove('text-yellow-500');
+        mprd.classList.add('text-gray-100');
+      }
+    });
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 2155) {
+        mplt.classList.remove('text-gray-100');
+        mplt.classList.add('text-yellow-500');
+        element.classList.add('hidden');
+      } else {
+        mplt.classList.remove('text-yellow-500');
+        mplt.classList.add('text-gray-100');
+      }
+    });
+
+    function toggleVisibility() {
+      const element = document.getElementById('C/OElement');
+      element.classList.toggle('hidden');
+    }
+
+    function Close() {
+      const element = document.getElementById('C/OElement');
+      element.classList.add('hidden');
+    }
   </script>
 </body>
 </html>
