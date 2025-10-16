@@ -30,7 +30,7 @@
    </style> 
 </head>
 
-<header class="bg-inherit sticky top-0">
+<header class="bg-inherit sticky top-0" id="header">
   <div class="flex">
     <a href="https://github.com/SaghiOMey" class="-m-1.5 p-1.5">
         <span class="sr-only">SaghiOMey</span>
@@ -51,7 +51,7 @@
       <a href="#Gallery" class="text-sm/6 font-semibold dark:text-gray-100 text-gray-900 hover:text-yellow-500 hover:dark:text-yellow-500" id="glr">Gallery</a>
       <a href="#Products" class="text-sm/6 font-semibold dark:text-gray-100 text-gray-900 hover:text-yellow-500 hover:dark:text-yellow-500" id="prd">Products</a>
       <a href="#Platforms" class="text-sm/6 font-semibold dark:text-gray-100 text-gray-900 hover:text-yellow-500 hover:dark:text-yellow-500" id="plt">Platforms</a>
-      <a href="https://workflow-saghi-o-mey.vercel.app/cooperate" class="text-sm/6 font-semibold dark:text-gray-100 text-gray-900 hover:text-yellow-500 hover:dark:text-yellow-500">Cooperation</a>
+      <a href="#Cooperation" class="text-sm/6 font-semibold dark:text-gray-100 text-gray-900 hover:text-yellow-500 hover:dark:text-yellow-500" id="con">Cooperation</a>
     </div>
   </nav>
   <!-- Theme toggle button -->
@@ -165,7 +165,7 @@
             <a href="#Gallery" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold dark:text-gray-100 text-gray-900 hover:text-yellow-500 hover:dark:text-yellow-500" id="mglr">Gallery</a>
             <a href="#Products" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold dark:text-gray-100 text-gray-900 hover:text-yellow-500 hover:dark:text-yellow-500" id="mprd">Products</a>
             <a href="#Platforms" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold dark:text-gray-100 text-gray-900 hover:text-yellow-500 hover:dark:text-yellow-500" id="mplt">Platforms</a>
-            <a href="https://workflow-saghi-o-mey.vercel.app/cooperate" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold dark:text-gray-100 text-gray-900 hover:text-yellow-500 hover:dark:text-yellow-500"">Cooperation</a>            
+            <a href="#Cooperation" onclick="Close()" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold dark:text-gray-100 text-gray-900 hover:text-yellow-500 hover:dark:text-yellow-500" id="mcon">Cooperation</a>            
           </div>
         </div>
       </div>
@@ -321,6 +321,19 @@
                      </a>
             </div>
         </div>
+
+        <div class="pt-64 pb-40 mt-12 w-[310px] opacity-0 transition-opacity duration-700 text-center md:w-full" id="Cooperation">
+            <div class="border-b-2 dark:border-b-white border-b-black text-center md:text-left dark:text-white text-black">
+                <h2 class=" text-2xl font-bold md:text-4xl md:ml-7 pb-5">Cooperation</h2>
+            </div>
+            <div class="flex justify-center py-5">
+              <a href="https://workflow-saghi-o-mey.vercel.app/cooperate">
+                 <img class="inline-block blur-sm h-12 w-12 rounded-full ring-2 ring-yellow-500" src="https://images.unsplash.com/photo-1634655613075-b1f7446b2ec8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTUyfHxkaWdpdGFsJTIwYXJ0fGVufDB8fDB8fHww" alt="Cooperate">
+                 <img class="inline-block blur-sm h-12 w-12 rounded-full ring-2 ring-yellow-500" src="https://images.unsplash.com/photo-1632260260864-caf7fde5ec36?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjQwfHxkaWdpdGFsJTIwYXJ0fGVufDB8fDB8fHww" alt="Cooperate">
+                 <img class="inline-block blur-sm h-12 w-12 rounded-full ring-2 ring-yellow-500" src="https://media.istockphoto.com/id/1214356947/photo/open-book-with-binary-code.webp?b=1&s=170667a&w=0&k=20&c=_ZgWchGX73W6O5r6-GAzi2oyNOpKh9dfZiUsMLLk__Y=" alt="Cooperate">
+              </a>
+              </div>
+        </div>
     </main>
       <footer class="w-full py-14 opacity-0 transition-opacity duration-700" id="scrollFooter">
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -336,7 +349,7 @@
                         <li><a href="#Gallery" class=" dark:text-gray-200 text-gray-900 hover:text-yellow-500 hover:dark:text-yellow-500">Gallery</a></li>
                         <li><a href="#Products" class=" dark:text-gray-200 text-gray-900 hover:text-yellow-500 hover:dark:text-yellow-500">Products</a></li>
                         <li><a href="#Platforms" class=" dark:text-gray-200 text-gray-900 hover:text-yellow-500 hover:dark:text-yellow-500">Platforms</a></li>
-                        <li><a href="https://workflow-saghi-o-mey.vercel.app/cooperate" class=" dark:text-gray-200 text-gray-900 hover:text-yellow-500 hover:dark:text-yellow-500">Cooperation</a></li>
+                        <li><a href="#Cooperation" class=" dark:text-gray-200 text-gray-900 hover:text-yellow-500 hover:dark:text-yellow-500">Cooperation</a></li>
                     </ul>
                   </nav>  
                     <div class="flex space-x-10 justify-center items-center mb-14">
@@ -390,12 +403,14 @@
     const glr = document.getElementById('glr');
     const prd= document.getElementById('prd');
     const plt= document.getElementById('plt');
+    const con= document.getElementById('con');
 
     const msts = document.getElementById('msts');
     const mpes = document.getElementById('mpes');
     const mglr = document.getElementById('mglr');
     const mprd= document.getElementById('mprd');
     const mplt= document.getElementById('mplt');
+    const mcon= document.getElementById('mcon');
 
     const element = document.getElementById('C/OElement');
 
@@ -404,7 +419,9 @@
     const Gallery = document.getElementById('Gallery');
     const Products = document.getElementById('Products');
     const Platforms = document.getElementById('Platforms');
+    const Cooperation = document.getElementById('Cooperation');
     const scrollFooter = document.getElementById('scrollFooter');
+    const header = document.getElementById('header');
 
     // Add scroll event listeners to change text color based on scroll position
     window.addEventListener('scroll', () => {
@@ -458,16 +475,27 @@
 
     window.addEventListener('scroll', () => {
       if (window.scrollY > 2140 && window.scrollY < 2640) {
-        // Scroll passed 100px, change text color to red using Tailwind class
         plt.classList.remove('text-gray-100');
         plt.classList.remove('dark:text-gray-100');
         plt.classList.add('text-yellow-500');
         element.classList.add('hidden');
       } else {
-        // Scroll above 100px, revert text color back to black
         plt.classList.remove('text-yellow-500');
         plt.classList.add('dark:text-gray-100');
         plt.classList.add('text-gray-900');
+      }
+    });
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 2660 && window.scrollY < 3240) {
+        con.classList.remove('text-gray-100');
+        con.classList.remove('dark:text-gray-100');
+        con.classList.add('text-yellow-500');
+        element.classList.add('hidden');
+      } else {
+        con.classList.remove('text-yellow-500');
+        con.classList.add('dark:text-gray-100');
+        con.classList.add('text-gray-900');
       }
     });
     
@@ -525,7 +553,7 @@
     });
 
     window.addEventListener('scroll', () => {
-      if (window.scrollY > 2155 && window.scrollY < 2580) {
+      if (window.scrollY > 2155 && window.scrollY < 2550) {
         mplt.classList.remove('text-gray-100');
         mplt.classList.remove('dark:text-gray-100');
         mplt.classList.add('text-yellow-500');
@@ -534,6 +562,19 @@
         mplt.classList.remove('text-yellow-500');
         mplt.classList.add('dark:text-gray-100');
         mplt.classList.add('text-gray-900');
+      }
+    });
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 2555 && window.scrollY < 3200) {
+        mcon.classList.remove('text-gray-100');
+        mcon.classList.remove('dark:text-gray-100');
+        mcon.classList.add('text-yellow-500');
+        element.classList.add('hidden');
+      } else {
+        mcon.classList.remove('text-yellow-500');
+        mcon.classList.add('dark:text-gray-100');
+        mcon.classList.add('text-gray-900');
       }
     });
 
@@ -551,10 +592,19 @@
     });
 
     window.addEventListener('scroll', () => {
+      if(window.scrollY > 3250) {
+        header.classList.add('hidden');
+      } else {
+        header.classList.remove('hidden');
+      }
+    });
+
+    window.addEventListener('scroll', () => {
       if (window.scrollY > 350 && window.scrollY < 850) {
         Sites.classList.remove('opacity-0');
         Sites.classList.add('opacity-100');
         Sites.classList.add('ease-in');
+        Cooperation.classList.remove('hidden');
       } else {
         Sites.classList.remove('opacity-100');
         Sites.classList.remove('ease-in');
@@ -567,6 +617,7 @@
         Press.classList.remove('opacity-0');
         Press.classList.remove('opacity-100');
         Press.classList.add('ease-in');
+        Cooperation.classList.remove('hidden');
       } else {
         Press.classList.remove('opacity-100');
         Press.classList.add('opacity-0');
@@ -579,6 +630,7 @@
         Gallery.classList.remove('opacity-0');
         Gallery.classList.add('opacity-100');
         Gallery.classList.add('ease-in');
+        Cooperation.classList.remove('hidden');
       } else {
         Gallery.classList.remove('opacity-100');
         Gallery.classList.add('opacity-0');
@@ -591,6 +643,7 @@
         Products.classList.remove('opacity-0');
         Products.classList.add('opacity-100');
         Products.classList.add('ease-in');
+        Cooperation.classList.remove('hidden');
       } else {
         Products.classList.remove('opacity-100');
         Products.classList.add('opacity-0');
@@ -603,21 +656,36 @@
         Platforms.classList.remove('opacity-0');
         Platforms.classList.add('opacity-100');
         Platforms.classList.add('ease-in');
+        Cooperation.classList.remove('hidden');
       } else {
         Platforms.classList.remove('opacity-100');
         Platforms.classList.add('opacity-0');
         Platforms.classList.remove('ease-in');
       }
     });
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 2660 && window.scrollY < 3240) {
+        Cooperation.classList.remove('opacity-0');
+        Cooperation.classList.add('opacity-100');
+        Cooperation.classList.add('ease-in'); 
+      } else {
+        Cooperation.classList.remove('opacity-100');
+        Cooperation.classList.add('opacity-0');
+        Cooperation.classList.remove('ease-in');
+      }
+    });
     
     function toggleVisibility() {
       const element = document.getElementById('C/OElement');
       element.classList.toggle('hidden');
+      Cooperation.classList.add('hidden');
     }
 
     function Close() {
       const element = document.getElementById('C/OElement');
       element.classList.add('hidden');
+      Cooperation.classList.remove('hidden');
     }
 
     tailwind.config = {
