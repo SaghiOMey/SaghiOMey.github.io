@@ -27,6 +27,18 @@
       opacity: 0.3;
       clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%);
     }
+    /* Reveal fragment targets when navigated to and account for sticky header */
+    #Sites:target,
+    #Press:target,
+    #Gallery:target,
+    #Products:target,
+    #Platforms:target,
+    #Cooperation:target,
+    #Ads:target {
+      opacity: 1 !important;
+      transition: opacity 0.5s ease-in;
+      scroll-margin-top: 5rem;
+    }
    </style> 
 </head>
 
@@ -52,6 +64,7 @@
       <a href="#Products" class="text-sm/6 font-semibold dark:text-gray-100 text-gray-900 hover:text-yellow-500 hover:dark:text-yellow-500" id="prd">Products</a>
       <a href="#Platforms" class="text-sm/6 font-semibold dark:text-gray-100 text-gray-900 hover:text-yellow-500 hover:dark:text-yellow-500" id="plt">Platforms</a>
       <a href="#Cooperation" class="text-sm/6 font-semibold dark:text-gray-100 text-gray-900 hover:text-yellow-500 hover:dark:text-yellow-500" id="con">Cooperation</a>
+      <a href="#Ads" class="text-sm/6 font-semibold dark:text-gray-100 text-gray-900 hover:text-yellow-500 hover:dark:text-yellow-500" id="ad">Ads</a>
     </div>
   </nav>
   <!-- Theme toggle button -->
@@ -165,7 +178,8 @@
             <a href="#Gallery" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold dark:text-gray-100 text-gray-900 hover:text-yellow-500 hover:dark:text-yellow-500" id="mglr">Gallery</a>
             <a href="#Products" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold dark:text-gray-100 text-gray-900 hover:text-yellow-500 hover:dark:text-yellow-500" id="mprd">Products</a>
             <a href="#Platforms" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold dark:text-gray-100 text-gray-900 hover:text-yellow-500 hover:dark:text-yellow-500" id="mplt">Platforms</a>
-            <a href="#Cooperation" onclick="Close()" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold dark:text-gray-100 text-gray-900 hover:text-yellow-500 hover:dark:text-yellow-500" id="mcon">Cooperation</a>            
+            <a href="#Cooperation" onclick="Close()" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold dark:text-gray-100 text-gray-900 hover:text-yellow-500 hover:dark:text-yellow-500" id="mcon">Cooperation</a> 
+            <a href="#Ads" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold dark:text-gray-100 text-gray-900 hover:text-yellow-500 hover:dark:text-yellow-500" id="mad">Ads</a>            
           </div>
         </div>
       </div>
@@ -209,7 +223,7 @@
                 </div>
         </div>
 
-        <div class="pt-56 mt-12 w-[310px] opacity-0 transition-opacity duration-700 text-center md:w-full md:text-left" id="Press">
+        <div class="pt-44 mt-12 w-[310px] opacity-0 transition-opacity duration-700 text-center md:w-full md:text-left" id="Press">
             <div class="border-b-2 dark:border-b-white border-b-black">
                 <h2 class="text-2xl font-bold md:text-4xl md:ml-7 dark:text-white text-black pb-5">Press</h2>
             </div>
@@ -258,7 +272,7 @@
             </div>
             </div>
 
-        <div class="pt-56 mt-12 w-[310px] opacity-0 transition-opacity duration-700 text-center md:w-full md:text-left" id="Gallery">
+        <div class="pt-44 mt-12 w-[310px] opacity-0 transition-opacity duration-700 text-center md:w-full md:text-left" id="Gallery">
             <div class="border-b-2 dark:border-b-white border-b-black">
                 <h2 class="text-2xl font-bold md:text-4xl md:ml-7 dark:text-white text-black pb-5">Gallery</h2>
             </div>
@@ -269,7 +283,7 @@
             </div>
             </div>
 
-        <div class="pt-56 mt-12 w-[310px] opacity-0 transition-opacity duration-700 text-center md:w-full md:text-left" id="Products">
+        <div class="pt-44 mt-12 w-[310px] opacity-0 transition-opacity duration-700 text-center md:w-full md:text-left" id="Products">
             <div class="border-b-2 dark:border-b-white border-b-black">
                 <h1 class="text-2xl font-bold md:text-4xl md:ml-7 dark:text-white text-black pb-5">Products</h1>
             </div>
@@ -309,7 +323,7 @@
                 </div>
             </div>    
 
-        <div class="pt-64 pb-40 mt-12 w-[310px] opacity-0 transition-opacity duration-700 text-center md:w-full" id="Platforms">
+        <div class="pt-44 pb-40 mt-12 w-[310px] opacity-0 transition-opacity duration-700 text-center md:w-full" id="Platforms">
             <div class="border-b-2 dark:border-b-white border-b-black text-center md:text-left dark:text-white text-black">
                 <h2 class=" text-2xl font-bold md:text-4xl md:ml-7 pb-5">Platforms</h2>
             </div>
@@ -333,7 +347,7 @@
             </div>
         </div>
 
-        <div class="pt-64 pb-40 mt-12 w-[310px] opacity-0 transition-opacity duration-700 text-center md:w-full" id="Cooperation">
+        <div class="pt-44 pb-40 mt-12 w-[310px] opacity-0 transition-opacity duration-700 text-center md:w-full" id="Cooperation">
             <div class="border-b-2 dark:border-b-white border-b-black text-center md:text-left dark:text-white text-black">
                 <h2 class=" text-2xl font-bold md:text-4xl md:ml-7 pb-5">Cooperation</h2>
             </div>
@@ -344,6 +358,30 @@
                  <img class="inline-block blur-sm h-12 w-12 rounded-full ring-2 ring-yellow-500" src="https://media.istockphoto.com/id/1214356947/photo/open-book-with-binary-code.webp?b=1&s=170667a&w=0&k=20&c=_ZgWchGX73W6O5r6-GAzi2oyNOpKh9dfZiUsMLLk__Y=" alt="Cooperate">
               </a>
               </div>
+        </div>
+
+        <div class="pt-44 pb-40 mt-12 w-[310px] opacity-0 transition-opacity duration-700 text-center md:w-full" id="Ads">
+            <div class="border-b-2 dark:border-b-white border-b-black text-center md:text-left dark:text-white text-black">
+                <h2 class=" text-2xl font-bold md:text-4xl md:ml-7 pb-5">Ads</h2>
+            </div>
+            <div class="md:ml-8 flex justify-center py-5">
+              <a
+                class="text-yellow-500 ml-7 md:ml-14 lg:ml-14 hover:text-black hover:dark:text-white fill-current"
+                href="http://saghiomey.vercel.app/EchoAd"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="size-9">
+                  <path d="M18.375 2.25c-1.035 0-1.875.84-1.875 1.875v15.75c0 1.035.84 1.875 1.875 1.875h.75c1.035 0 1.875-.84 1.875-1.875V4.125c0-1.036-.84-1.875-1.875-1.875h-.75ZM9.75 8.625c0-1.036.84-1.875 1.875-1.875h.75c1.036 0 1.875.84 1.875 1.875v11.25c0 1.035-.84 1.875-1.875 1.875h-.75a1.875 1.875 0 0 1-1.875-1.875V8.625ZM3 13.125c0-1.036.84-1.875 1.875-1.875h.75c1.036 0 1.875.84 1.875 1.875v6.75c0 1.035-.84 1.875-1.875 1.875h-.75A1.875 1.875 0 0 1 3 19.875v-6.75Z" />
+                </svg>
+              </a>
+              <a
+                class="text-yellow-500 ml-7 md:ml-14 lg:ml-14 hover:text-black hover:dark:text-white fill-current"
+                href="http://saghiomey.vercel.app/Ad"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="size-9">
+                  <path fill-rule="evenodd" d="M3 6a3 3 0 0 1 3-3h12a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3V6Zm4.5 7.5a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-1.5 0v-2.25a.75.75 0 0 1 .75-.75Zm3.75-1.5a.75.75 0 0 0-1.5 0v4.5a.75.75 0 0 0 1.5 0V12Zm2.25-3a.75.75 0 0 1 .75.75v6.75a.75.75 0 0 1-1.5 0V9.75A.75.75 0 0 1 13.5 9Zm3.75-1.5a.75.75 0 0 0-1.5 0v9a.75.75 0 0 0 1.5 0v-9Z" clip-rule="evenodd" />
+                </svg>
+              </a>
+            </div>
         </div>
     </main>
       <footer class="w-full py-14 opacity-0 transition-opacity duration-700" id="scrollFooter">
@@ -361,6 +399,7 @@
                         <li><a href="#Products" class=" dark:text-gray-200 text-gray-900 hover:text-yellow-500 hover:dark:text-yellow-500">Products</a></li>
                         <li><a href="#Platforms" class=" dark:text-gray-200 text-gray-900 hover:text-yellow-500 hover:dark:text-yellow-500">Platforms</a></li>
                         <li><a href="#Cooperation" class=" dark:text-gray-200 text-gray-900 hover:text-yellow-500 hover:dark:text-yellow-500">Cooperation</a></li>
+                        <li><a href="#Ads" class=" dark:text-gray-200 text-gray-900 hover:text-yellow-500 hover:dark:text-yellow-500">Ads</a></li>
                     </ul>
                   </nav>  
                     <div class="flex space-x-10 justify-center items-center mb-14">
@@ -415,6 +454,7 @@
     const prd= document.getElementById('prd');
     const plt= document.getElementById('plt');
     const con= document.getElementById('con');
+    const ad= document.getElementById('ad');
 
     const msts = document.getElementById('msts');
     const mpes = document.getElementById('mpes');
@@ -422,6 +462,7 @@
     const mprd= document.getElementById('mprd');
     const mplt= document.getElementById('mplt');
     const mcon= document.getElementById('mcon');
+    const mad= document.getElementById('mad');
 
     const element = document.getElementById('C/OElement');
 
@@ -431,6 +472,7 @@
     const Products = document.getElementById('Products');
     const Platforms = document.getElementById('Platforms');
     const Cooperation = document.getElementById('Cooperation');
+    const Ads = document.getElementById('Ads');
     const scrollFooter = document.getElementById('scrollFooter');
     const header = document.getElementById('header');
 
@@ -507,6 +549,19 @@
         con.classList.remove('text-yellow-500');
         con.classList.add('dark:text-gray-100');
         con.classList.add('text-gray-900');
+      }
+    });
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 3260 && window.scrollY < 3840) {
+        ad.classList.remove('text-gray-100');
+        ad.classList.remove('dark:text-gray-100');
+        ad.classList.add('text-yellow-500');
+        element.classList.add('hidden');
+      } else {
+        ad.classList.remove('text-yellow-500');
+        ad.classList.add('dark:text-gray-100');
+        ad.classList.add('text-gray-900');
       }
     });
     
@@ -589,6 +644,19 @@
       }
     });
 
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 3205 && window.scrollY < 3700) {
+        mad.classList.remove('text-gray-100');
+        mad.classList.remove('dark:text-gray-100');
+        mad.classList.add('text-yellow-500');
+        element.classList.add('hidden');
+      } else {
+        mad.classList.remove('text-yellow-500');
+        mad.classList.add('dark:text-gray-100');
+        mad.classList.add('text-gray-900');
+      }
+    });
+
     // Add scroll event listeners to change opacity of sections based on scroll position
     window.addEventListener('scroll', () => {
       if(window.scrollY > 2670) {
@@ -603,7 +671,7 @@
     });
 
     window.addEventListener('scroll', () => {
-      if(window.scrollY > 3250) {
+      if(window.scrollY > 3470) {
         header.classList.add('hidden');
       } else {
         header.classList.remove('hidden');
@@ -686,6 +754,19 @@
         Cooperation.classList.remove('ease-in');
       }
     });
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 3250 && window.scrollY < 3880) {
+        Ads.classList.remove('opacity-0');
+        Ads.classList.add('opacity-100');
+        Ads.classList.add('ease-in'); 
+        Cooperation.classList.remove('hidden');
+      } else {
+        Ads.classList.remove('opacity-100');
+        Ads.classList.add('opacity-0');
+        Ads.classList.remove('ease-in');
+      }
+    });
     
     function toggleVisibility() {
       const element = document.getElementById('C/OElement');
@@ -750,6 +831,22 @@
 
       updateIcons();
     });
+
+    // Reveal fragment target on load and when hash changes (makes mobile/menu anchors work)
+    function revealHashTarget() {
+      const id = location.hash.slice(1);
+      if (!id) return;
+      const el = document.getElementById(id);
+      if (el) {
+        el.classList.remove('opacity-0');
+        el.classList.add('opacity-100');
+        // respect scroll-margin-top defined in CSS
+        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+
+    window.addEventListener('load', revealHashTarget);
+    window.addEventListener('hashchange', revealHashTarget);
 
   </script>
 </body>
