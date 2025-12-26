@@ -179,7 +179,7 @@
             <a href="#Products" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold dark:text-gray-100 text-gray-900 hover:text-yellow-500 hover:dark:text-yellow-500" id="mprd">Products</a>
             <a href="#Platforms" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold dark:text-gray-100 text-gray-900 hover:text-yellow-500 hover:dark:text-yellow-500" id="mplt">Platforms</a>
             <a href="#Cooperation" onclick="Close()" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold dark:text-gray-100 text-gray-900 hover:text-yellow-500 hover:dark:text-yellow-500" id="mcon">Cooperation</a> 
-            <a href="#Ads" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold dark:text-gray-100 text-gray-900 hover:text-yellow-500 hover:dark:text-yellow-500" id="mad">Ads</a>            
+            <a href="#Ads" onclick="Close()" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold dark:text-gray-100 text-gray-900 hover:text-yellow-500 hover:dark:text-yellow-500" id="mad">Ads</a>            
           </div>
         </div>
       </div>
@@ -369,7 +369,7 @@
                 class="text-yellow-500 ml-7 md:ml-14 lg:ml-14 hover:text-black hover:dark:text-white fill-current"
                 href="http://saghiomey.vercel.app/EchoAd"
               >
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="size-9">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="size-12">
                   <path d="M18.375 2.25c-1.035 0-1.875.84-1.875 1.875v15.75c0 1.035.84 1.875 1.875 1.875h.75c1.035 0 1.875-.84 1.875-1.875V4.125c0-1.036-.84-1.875-1.875-1.875h-.75ZM9.75 8.625c0-1.036.84-1.875 1.875-1.875h.75c1.036 0 1.875.84 1.875 1.875v11.25c0 1.035-.84 1.875-1.875 1.875h-.75a1.875 1.875 0 0 1-1.875-1.875V8.625ZM3 13.125c0-1.036.84-1.875 1.875-1.875h.75c1.036 0 1.875.84 1.875 1.875v6.75c0 1.035-.84 1.875-1.875 1.875h-.75A1.875 1.875 0 0 1 3 19.875v-6.75Z" />
                 </svg>
               </a>
@@ -377,7 +377,7 @@
                 class="text-yellow-500 ml-7 md:ml-14 lg:ml-14 hover:text-black hover:dark:text-white fill-current"
                 href="http://saghiomey.vercel.app/Ad"
               >
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="size-9">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="size-12">
                   <path fill-rule="evenodd" d="M3 6a3 3 0 0 1 3-3h12a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3V6Zm4.5 7.5a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-1.5 0v-2.25a.75.75 0 0 1 .75-.75Zm3.75-1.5a.75.75 0 0 0-1.5 0v4.5a.75.75 0 0 0 1.5 0V12Zm2.25-3a.75.75 0 0 1 .75.75v6.75a.75.75 0 0 1-1.5 0V9.75A.75.75 0 0 1 13.5 9Zm3.75-1.5a.75.75 0 0 0-1.5 0v9a.75.75 0 0 0 1.5 0v-9Z" clip-rule="evenodd" />
                 </svg>
               </a>
@@ -540,7 +540,7 @@
     });
 
     window.addEventListener('scroll', () => {
-      if (window.scrollY > 2660 && window.scrollY < 3240) {
+      if (window.scrollY > 2660 && window.scrollY < 3040) {
         con.classList.remove('text-gray-100');
         con.classList.remove('dark:text-gray-100');
         con.classList.add('text-yellow-500');
@@ -553,7 +553,7 @@
     });
 
     window.addEventListener('scroll', () => {
-      if (window.scrollY > 3260 && window.scrollY < 3840) {
+      if (window.scrollY > 3120 && window.scrollY < 3840) {
         ad.classList.remove('text-gray-100');
         ad.classList.remove('dark:text-gray-100');
         ad.classList.add('text-yellow-500');
@@ -632,7 +632,7 @@
     });
 
     window.addEventListener('scroll', () => {
-      if (window.scrollY > 2555 && window.scrollY < 3200) {
+      if (window.scrollY > 2555 && window.scrollY < 2630) {
         mcon.classList.remove('text-gray-100');
         mcon.classList.remove('dark:text-gray-100');
         mcon.classList.add('text-yellow-500');
@@ -645,7 +645,7 @@
     });
 
     window.addEventListener('scroll', () => {
-      if (window.scrollY > 3205 && window.scrollY < 3700) {
+      if (window.scrollY > 2655 && window.scrollY < 3700) {
         mad.classList.remove('text-gray-100');
         mad.classList.remove('dark:text-gray-100');
         mad.classList.add('text-yellow-500');
@@ -845,8 +845,49 @@
       }
     }
 
-    window.addEventListener('load', revealHashTarget);
-    window.addEventListener('hashchange', revealHashTarget);
+    // Highlight nav links (desktop + mobile) when navigating to a fragment
+    function highlightNavForId(id) {
+      const map = {
+        Sites: ['sts','msts'],
+        Press: ['pes','mpes'],
+        Gallery: ['glr','mglr'],
+        Products: ['prd','mprd'],
+        Platforms: ['plt','mplt'],
+        Cooperation: ['con','mcon'],
+        Ads: ['ad','mad']
+      };
+
+      // flatten all ids
+      const all = Object.values(map).flat();
+      all.forEach(i => {
+        const el = document.getElementById(i);
+        if (!el) return;
+        el.classList.remove('text-yellow-500');
+        el.classList.add('dark:text-gray-100');
+        el.classList.add('text-gray-900');
+      });
+
+      const targets = map[id];
+      if (!targets) return;
+      targets.forEach(i => {
+        const el = document.getElementById(i);
+        if (!el) return;
+        el.classList.remove('dark:text-gray-100');
+        el.classList.remove('text-gray-900');
+        el.classList.add('text-yellow-500');
+      });
+    }
+
+    window.addEventListener('load', () => {
+      revealHashTarget();
+      const id = location.hash.slice(1);
+      if (id) highlightNavForId(id);
+    });
+    window.addEventListener('hashchange', () => {
+      revealHashTarget();
+      const id = location.hash.slice(1);
+      if (id) highlightNavForId(id);
+    });
 
   </script>
 </body>
