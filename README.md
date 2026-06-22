@@ -20,7 +20,10 @@
 
 # Gallery
 
-[I  A  V](https://saghiomey.vercel.app/Gallery)
+[I](https://saghiomey.vercel.app/Gallery/Image)
+[A](https://saghiomey.vercel.app/Gallery/Audio)
+[S](https://saghiomey.vercel.app/Gallery/Stylish)
+[V](https://saghiomey.vercel.app/Gallery/Video)
 
 
 # Products
