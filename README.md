@@ -36,7 +36,7 @@
 
 # Platforms
 
-[<img src="/assets/google-news.svg" width="22" />](https://news.google.com/s/CBIw6YXAwrEB?sceid=US:en&sceid=US:en&r=0&oc=1)
+[<img src="/assets/google-news.svg" width="22" />](https://news.google.com/publications/CAAqBwgKMKnvzgsw2IrmAw?ceid=US:en&oc=3)
 [<img src="/assets/linkedin.svg" width="22" />](https://www.linkedin.com/company/saghiomey/)
 [<img src="/assets/github.svg" width="22" />](https://github.com/SaghiOMey)
 
