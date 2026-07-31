@@ -1,8 +1,8 @@
 # [<img src="/assets/SaghiOMey.svg" width="95" />](https://saghiomey.github.io) SaghiOMey(SM)
 
-### SaghiOMey(SM) is a media a subject chose by people and can produce relationship between government and nation.
+### SaghiOMey(SM) is a people-powered media platform that connects public ideas with civic conversation.
 
-#### Decentralized from the SaghiOMey is logically, the the question is how our costs are covered! simply by people, they choose whether or not, we exist.
+#### SaghiOMey is decentralized in spirit: people decide whether we exist by choosing to support the costs of the platform.
 
 
 # SaghiOMey Sites
@@ -28,10 +28,10 @@
 
 # Products
 
-[<img src="/assets/image.svg" width="26" />](https://shopping-saghiomey.netlify.app/image)
-[<img src="/assets/audio.svg" width="26" />](https://shopping-saghiomey.netlify.app/audio)
-[<img src="/assets/video.svg" width="26" />](https://shopping-saghiomey.netlify.app/video)
-[<img src="/assets/book.svg" width="26" />](https://shopping-saghiomey.netlify.app/book)
+[<img src="/assets/image.svg" width="26" />](https://shopping-saghiomey.vercel.app/image)
+[<img src="/assets/audio.svg" width="26" />](https://shopping-saghiomey.vercel.app/audio)
+[<img src="/assets/video.svg" width="26" />](https://shopping-saghiomey.vercel.app/video)
+[<img src="/assets/book.svg" width="26" />](https://shopping-saghiomey.vercel.app/book)
 
 
 # Platforms
@@ -43,8 +43,8 @@
 
 # Ads
 
-[<img src="/assets/echoad.svg" width="26" />](http://saghiomey.vercel.app/EchoAd)
-[<img src="/assets/ad.svg" width="26" />](http://saghiomey.vercel.app/Ad)
+[<img src="/assets/echoad.svg" width="26" />](https://saghiomey.vercel.app/EchoAd)
+[<img src="/assets/ad.svg" width="26" />](https://saghiomey.vercel.app/Ad)
 
 
 
