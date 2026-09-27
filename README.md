@@ -36,6 +36,7 @@
 
 # Platforms
 
+[<img src="/assets/brief.svg" width="22" />](https://workflow-saghi-o-mey.vercel.app/brief)
 [<img src="/assets/google-news.svg" width="22" />](https://news.google.com/publications/CAAqBwgKMKnvzgsw2IrmAw?ceid=US:en&oc=3)
 [<img src="/assets/linkedin.svg" width="22" />](https://www.linkedin.com/company/saghiomey/)
 [<img src="/assets/github.svg" width="22" />](https://github.com/SaghiOMey)
